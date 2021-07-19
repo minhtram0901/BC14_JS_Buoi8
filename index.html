@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Buoi 8</title>
+    <!-- BS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container py-3">
+        <div class="row">
+            <div class="initIntArr col-6">
+                <div class="myform my-2">
+                    <h5>Hãy khởi tạo mảng số nguyên của bạn.</h5>
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-12">
+                            <input type="number" step="1" class="form-control" id="inputIntArrEl"
+                                placeholder="Nhập giá trị bất kì">
+                        </div>
+                        <div class="col-xl-7 col-lg-12">
+                            <button type="button" class="btn btn-primary" id="btnPushIntEl">Nhập vào mảng</button>
+                            <button type="button" class="btn btn-primary" id="btnDelIntEl">Xóa mảng</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="myform my-2">
+                    <h5>Chỉ định 2 vị trí trong mảng mà bạn muốn hoán đổi giá trị (bắt đầu từ 0).</h5>
+                    <div class="row">
+                        <div class="form-group col-xl-6 col-lg-12">
+                            <label for="inputIdxEl1">Index 1</label>
+                            <input type="number" min="0" step="1" class="form-control" id="inputIdxEl1"
+                                placeholder="Nhập vị trí hoán đổi 1" disabled>
+                        </div>
+                        <div class="form-group col-xl-6 col-lg-12">
+                            <label for="inputIdxEl2">Index 2</label>
+                            <input type="number" min="0" step="1" class="form-control" id="inputIdxEl2"
+                                placeholder="Nhập vị trí hoán đổi 2" disabled>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btnExchangeValEl" disabled>Hoán đổi vị
+                        trí</button>
+                </div>
+            </div>
+            <div class="request col-6">
+                <div class="myform my-2">
+                    <button type="button" class="btn btn-primary my-2" id="btnSumPosEl" disabled>Tính tổng các số
+                        dương</button>
+                    <button type="button" class="btn btn-primary my-2" id="btnCountPosEl" disabled>Đếm số lượng số
+                        dương</button>
+                    <button type="button" class="btn btn-primary my-2" id="btnFindMinEl" disabled>Tìm số nhỏ
+                        nhất</button>
+                    <button type="button" class="btn btn-primary my-2" id="btnFindMinPosEl" disabled>Tìm số dương nhỏ
+                        nhất</button>
+                    <button type="button" class="btn btn-primary my-2" id="btnFindLastEvenEl" disabled>Tìm số chẵn cuối
+                        cùng</button>
+                    <button type="button" class="btn btn-primary my-2" id="btnAscSort" disabled>Sắp xếp tăng
+                        dần</button>
+                    <button type="button" class="btn btn-primary my-2" id="btnFindFirstPrime" disabled>Tìm số nguyên tố
+                        đầu
+                        tiên</button>
+                    <button type="button" class="btn btn-primary my-2" id="btnCompare" disabled>So sánh số lượng số
+                        dương và số
+                        âm</button>
+                </div>
+
+            </div>
+            <div class="arrOutput  mb-2" id="intArr"></div>
+            <div class="result" id="intContent" style="white-space: pre-line"></div>
+            <div class="initFloatArr col-12">
+                <div class="myform  my-2">
+                    <h5>Hãy khởi tạo mảng số thực của bạn.</h5>
+                    <div class="form-group">
+                        <label for="inputFloatArrEl">Number</label>
+                        <input type="number" step=".1" class="form-control" id="inputFloatArrEl"
+                            placeholder="Nhập giá trị bất kì">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btnPushFloatEl">Nhập vào mảng</button>
+                    <button type="button" class="btn btn-primary" id="btnDelFloatEl">Xóa mảng</button>
+                    <button type="button" class="btn btn-primary my-2" id="btnCountIntEls">Đếm số lượng số
+                        nguyên</button>
+                </div>
+            </div>
+            <div class="arrOutput  mb-2" id="floatArr"></div>
+            <div class="result" id="floatContent"></div>
+        </div>
+    </div>
+    <!-- BS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
